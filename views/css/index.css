@@ -1,0 +1,122 @@
+@font-face {
+    font-family: Roboto;
+    src: url('./fonts/Roboto.zip');
+}
+@font-face {
+    font-family: Raleway;
+    src: url('./fonts/Raleway/Raleway-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: Sigmar;
+    src: url('./fonts/Sigmar/Sigmar-Regular.ttf');
+}
+body{
+    background-color: #202020;
+    margin: 0px;
+    overflow-x: hidden;
+}
+#trendingText{
+    color: white;
+    font-family: Roboto;
+    letter-spacing: 2px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 5vh;
+    margin-top: 4vh;
+}
+.trendingMoviesPicture{
+    width: 15vw;
+    aspect-ratio: 3/4;
+}
+.trendingMovies{
+    display: flex;
+    width: auto;
+    animation: trendingMoviesSliding 20s infinite;
+    z-index: -1;
+}
+@keyframes trendingMoviesSliding {
+    0%{
+        animation-timing-function: linear;
+        transform: translateX(0%);
+    }
+    100%{
+        animation-timing-function: linear;
+        transform: translateX(-150%);
+    }
+}
+.trendingMovies p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    height: 12vh;
+    vertical-align: middle;
+    font-family: Raleway;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(192, 192, 192, 0.5);
+    background-image: url("https://i.stack.imgur.com/MnyxU.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #FilmopédiaTitle{
+    font-size: 40px;
+    color: Red;
+    text-align: center;
+    font-style: italic;
+    font-weight: 400;
+    font-family: Sigmar;
+    margin-top: 2vh;
+  }
+  #searchIcon{
+    width: 2vw;
+    height: 2vw;
+    filter: invert(75%);
+    margin-right: 0.5vw;
+    transform: translateY(25%);
+  }
+  #searchZone{
+    display: flex;
+  }
+  #searchArea{
+    background: transparent;
+    border: grey solid 2px;
+    height: 2vw;
+    border-radius: 15px;
+    width: 10vw;
+    resize: none;
+    color: white;
+    font-size: 16px;
+    font-family: Raleway;
+  }
+  #recommandation{
+    background-color: rgb(24, 24, 24);
+    height: fit-content;
+    width: 10vw;
+    position: absolute;
+    right: 0px;
+    padding: 0.3vw;
+    z-index: 100;
+  }
+  #recommandation p{
+    color: white;
+    letter-spacing: 2px;
+    font-family: Raleway;
+    text-align: center;
+    position: relative;
+    
+  }
+  #topRight{
+    right: 5vw;
+    top: 2vw;
+    position: absolute;
+  }
